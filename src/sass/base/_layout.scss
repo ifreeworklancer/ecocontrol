@@ -1,0 +1,43 @@
+.social-list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+        border-right: 1px solid $light;
+
+        &:first-of-type {
+            border-left: 1px solid $light;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            transition: .5s;
+
+            svg {
+                transition: .5s;
+            }
+        }
+    }
+
+    &--white {
+
+        a {
+
+            svg {
+                fill: #fff;
+            }
+
+            &:hover {
+                background: #fff;
+
+                svg {
+                    fill: $dark;
+                }
+            }
+        }
+    }
+}

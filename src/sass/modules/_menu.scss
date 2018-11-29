@@ -1,0 +1,18 @@
+.burger-menu {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+
+  .line {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: #fff;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+  }
+}
