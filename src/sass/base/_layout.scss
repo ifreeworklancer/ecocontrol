@@ -1,43 +1,246 @@
-.social-list {
-    display: flex;
-    align-items: center;
+.logo {
 
-    &-item {
-        border-right: 1px solid $light;
-
-        &:first-of-type {
-            border-left: 1px solid $light;
-        }
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 65px;
-            height: 65px;
-            transition: .5s;
-
-            svg {
-                transition: .5s;
-            }
-        }
-    }
-
-    &--white {
-
-        a {
-
-            svg {
-                fill: #fff;
-            }
-
-            &:hover {
-                background: #fff;
-
-                svg {
-                    fill: $dark;
-                }
-            }
-        }
-    }
+  &--simple {
+    display: block;
+    width: 90px;
+    height: 55px;
+    @extend %img;
+  }
 }
+
+
+.social-list {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    border-right: 1px solid #D1D1D1;
+
+    &:first-of-type {
+      border-left: 1px solid #D1D1D1;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 65px;
+      height: 65px;
+      transition: .5s;
+
+      svg {
+        transition: .5s;
+      }
+    }
+  }
+
+  &--white {
+
+    a {
+
+      svg {
+        fill: #fff;
+      }
+
+      &:hover {
+        background: #fff;
+
+        svg {
+          fill: $dark;
+        }
+      }
+    }
+  }
+
+  &--special {
+
+    a {
+      svg {
+        fill: $dark;
+      }
+
+      &:hover {
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    .social-list-item {
+
+      &--facebook {
+
+        a {
+
+          &:hover {
+            background: #4267B2;
+          }
+        }
+      }
+
+      &--youtube {
+
+        a {
+
+          &:hover {
+            background: #c00;
+          }
+        }
+      }
+
+      &--instagram {
+
+        a {
+
+          &:hover {
+            background: #C331A3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.more-info {
+  display: inline-block;
+  background: $light;
+  color: $dark;
+  text-decoration: underline;
+
+  &:hover {
+    color: $dark;
+  }
+}
+
+.custom-card {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto 40px;
+  box-shadow: 0px 0px 15px 0px rgba(51, 51, 51, .6);
+
+  &--primary {
+
+    .custom-card-header {
+      border-top: 5px solid $primary;
+    }
+  }
+
+  &--secondary {
+
+    .btn {
+      color: $primary;
+    }
+  }
+
+  &--big-title {
+
+    .custom-card-header {
+
+      .title {
+        font-size: $h3-font-size;
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+          font-size: $h3-font-size / 1.4;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+          font-size: $h3-font-size;
+        }
+      }
+    }
+  }
+
+  &-header {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  &-body {
+    position: relative;
+
+    .btn {
+      display: flex;
+      padding: 20px 0;
+      width: 100%;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        display: inline-flex;
+        width: auto;
+        padding: $btn-padding-y $btn-padding-x;
+        position: absolute;
+        top: 0;
+        right: -20px;
+      }
+    }
+
+    .img {
+      height: 345px;
+      @extend %img;
+    }
+  }
+}
+
+.custom-post-prev {
+  position: relative;
+  max-width: 350px;
+  margin: 30px auto;
+
+  .img {
+    position: relative;
+    margin-bottom: 45px;
+    height: 340px;
+    @extend %img;
+
+    .btn {
+      position: absolute;
+      left: 50%;
+      bottom: -21px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .content {
+
+    .title {
+      margin-bottom: 15px;
+
+      a {
+        color: $secondary;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          border-color: $secondary;
+        }
+      }
+    }
+
+    .author {
+      position: relative;
+      padding-bottom: 30px;
+      font-weight: bold;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30px;
+        height: 3px;
+        background: $dark;
+      }
+    }
+
+    .place {
+      font-weight: bold;
+    }
+  }
+}
+
