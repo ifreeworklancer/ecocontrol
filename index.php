@@ -16,7 +16,7 @@ require_once('header.php');
                                 . '<div class="img" style="background-image: url(' . $item['image'] . ')"></div>'
                                 . '<div class="content">'
                                 . '<h2 class="title">' . $item['title'] . '</h2>'
-                                . '<a href="#" class="btn btn-primary">підтримати</a>'
+                                . '<a href="page-help.php" class="btn btn-primary">підтримати</a>'
                                 . '</div>'
                                 . '</div>';
                         }
@@ -89,7 +89,7 @@ require_once('header.php');
                             Ти потрібен природі
                         </h2>
                         <div class="section-subtitle">
-                            Хочеш стати волонтером у своєму місті? <a href="#">Стати волонтером ECOCONTROOL</a>
+                            Хочеш стати волонтером у своєму місті? <a href="page-subscribe.php">Стати волонтером ECOCONTROOL</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ require_once('header.php');
                     . '<div class="content">'
                     . '<h4 class="title">' . $technology['item_top']['title'] . '</h4>'
                     . '<div class="subtitle">' . $technology['item_top']['subtitle'] . '</div>'
-                    . '<a href="#" class="more-info">Читати далі</a>'
+                    . '<a href="single.php" class="more-info">Читати далі</a>'
                     . '</div>'
                     . '</div>'
                     . '</div>';
@@ -145,7 +145,7 @@ require_once('header.php');
                     . '<div class="content">'
                     . '<h4 class="title">' . $technology['item_middle_left']['title'] . '</h4>'
                     . '<div class="subtitle">' . $technology['item_middle_left']['subtitle'] . '</div>'
-                    . '<a href="#" class="more-info">Читати далі</a>'
+                    . '<a href="single.php" class="more-info">Читати далі</a>'
                     . '</div>'
                     . '</div>'
                     . '</div>';
@@ -160,7 +160,7 @@ require_once('header.php');
                     . '<div class="content">'
                     . '<h4 class="title">' . $technology['item_middle_center']['title'] . '</h4>'
                     . '<div class="subtitle">' . $technology['item_middle_center']['subtitle'] . '</div>'
-                    . '<a href="#" class="more-info">Читати далі</a>'
+                    . '<a href="single.php" class="more-info">Читати далі</a>'
                     . '</div>'
                     . '</div>'
                     . '</div>';
@@ -175,7 +175,7 @@ require_once('header.php');
                     . '<div class="content">'
                     . '<h4 class="title">' . $technology['item_bottom']['title'] . '</h4>'
                     . '<div class="subtitle">' . $technology['item_bottom']['subtitle'] . '</div>'
-                    . '<a href="#" class="more-info">Читати далі</a>'
+                    . '<a href="single.php" class="more-info">Читати далі</a>'
                     . '</div>'
                     . '</div>'
                     . '</div>';
@@ -197,7 +197,7 @@ require_once('header.php');
                         . '<h5 class="title">' . $item['title'] . '</h5>'
                         . '</div>'
                         . '<div class="custom-card-body">'
-                        . '<a href="#" class="btn btn-light">переглянути</a>'
+                        . '<a href="page-maps.php" class="btn btn-light">переглянути</a>'
                         . '<div class="img img--big" style="background-image:url(' . $item['image'] . ');"></div>'
                         . '</div>'
                         . '</div>'
@@ -231,7 +231,7 @@ require_once('header.php');
                     </div>
                 </div>
                 <div class="col-auto mt-4 mt-sm-0">
-                    <a href="#" class="btn btn-primary">
+                    <a href="page-appeal.php" class="btn btn-primary">
                         залишити
                     </a>
                 </div>
@@ -249,7 +249,7 @@ require_once('header.php');
                         <div class="subtitle">
                             Тут ми освітлюємо всі термінові події та ситуації в екологічній сфері
                         </div>
-                        <a href="#" class="btn btn-primary">переглянути</a>
+                        <a href="archive-news.php" class="btn btn-primary">переглянути</a>
                     </div>
                 </div>
             </div>
@@ -261,7 +261,7 @@ require_once('header.php');
                         . '<div class="custom-post-prev custom-post-prev--news">'
                         . '<div class="img" style="background-image:url(' . $item['image'] . ');"></div>'
                         . '<div class="content">'
-                        . '<h6 class="title"><a href="#">' . $item['title'] . '</a></h6>'
+                        . '<h6 class="title"><a href="single.php">' . $item['title'] . '</a></h6>'
                         . '<div class="author">' . $item['author'] . '</div>'
                         . '</div>'
                         . '</div>'
@@ -289,10 +289,10 @@ require_once('header.php');
                         '<div class="col-sm-7 col-lg-4">'
                         . '<div class="custom-post-prev custom-post-prev--events">'
                         . '<div class="img" style="background-image:url(' . $item['image'] . ');">'
-                            .'<a href="#" class="btn btn-primary">взяти участь</a>'
+                            .'<a href="page-participate.php" class="btn btn-primary">взяти участь</a>'
                         .'</div>'
                         . '<div class="content">'
-                        . '<h6 class="title"><a href="#">' . $item['title'] . '</a></h6>'
+                        . '<h6 class="title"><a href="archive-held_events.php">' . $item['title'] . '</a></h6>'
                         . '<div class="data">' . $item['data'] . '</div>'
                         . '<div class="place">' . $item['place'] . '</div>'
                         . '</div>'

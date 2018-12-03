@@ -1,19 +1,26 @@
-<!-- Footer-banner -->
-<section id="footer-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">
-                    СТАНЬ ВОЛОНТЕРОМ, ДОПОМОЖИ КРАЇНІ !
-                </h2>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Call -->
 <section id="call">
     <div class="container">
+        <div class="row justify-content-center call-row">
+            <?php
+            foreach ($call_card as $item) {
+                echo
+                    '<div class="col-sm-7 col-lg-4"">'
+                    . '<div class="custom-card custom-card--primary custom-card--bg">'
+                    . '<div class="custom-card-header">'
+                    . '<h5 class="title">' . $item['title'] . '</h5>'
+                    . '</div>'
+                    . '<div class="custom-card-body">'
+                    . '<a href="archive-news.php" class="btn btn-primary">читати</a>'
+                    . '<div class="img img--big" style="background-image:url(' . $item['image'] . ');"></div>'
+                    . '</div>'
+                    . '</div>'
+                    . '</div>';
+            }
+            ?>
+        </div>
         <div class="row justify-content-between">
             <div class="col-sm-4">
                 <a href="/" class="call-description mb-4 mb-sm-0">

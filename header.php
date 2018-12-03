@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="logo" style="background-image: url('images/icon/logo/logo-header.png')"></a>
+                <a href="/" class="logo" style="background-image: url('images/icon/logo/logo-header.png')"></a>
                 <div class="col-sm-5 col-lg-4 pr-sm-0 d-none d-md-block">
                     <div class="social-nav d-flex justify-content-end align-items-center">
                         <ul class="social-list social-list--white">
@@ -68,7 +68,7 @@
                                 RU
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-danger">
+                        <a href="page-help.php" class="btn btn-danger">
                             Підтримати
                         </a>
                     </div>
@@ -76,5 +76,36 @@
             </div>
         </div>
     </header>
+
+    <div class="menu">
+        <nav class="menu-nav">
+            <ul class="menu-nav-list">
+                <li>
+                    <a href="#">Екологічні катастрофи</a>
+                </li>
+                <li>
+                    <a href="archive-news.php">Екологічні новини</a>
+                </li>
+                <li>
+                    <a href="page-maps.php">Еко мапи</a>
+                </li>
+                <li>
+                    <a href="single.php">Технології</a>
+                </li>
+                <li>
+                    <a href="archive-calendar.php">Еко календар</a>
+                </li>
+                <li>
+                    <a href="archive-institute.php">Еко заклади</a>
+                </li>
+                <li>
+                    <a href="archive-held_events.php">Заходи ECOCONTROL</a>
+                </li>
+                <li>
+                    <a href="#">Цікаві факти</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
